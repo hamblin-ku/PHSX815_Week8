@@ -7,7 +7,7 @@ def params():
         'savefig.dpi': 150,  			#to adjust notebook inline plot size
         'text.usetex': True,            	#Use LaTeX to render. Allows you to use LaTeX for the figure text (axes, labels, etc.), but increases render time.I usually disable LaTeX for making plots quickly in Jupyter, as otherwise it takes rather long to display. You must have LaTeX on your computer for this to work!
         'font.family': 'serif',			#Options: serif, sans-serif, cursive, fantasy, monospace 
-        'figure.autolayout': True,      	#This applies 'tight_layout' to the plot to make the plot fit the fig, useful when saving plots
+        'figure.autolayout': False,      	#This applies 'tight_layout' to the plot to make the plot fit the fig, useful when saving plots
     
         ## ********************************************************************************
         ## * Axes Settings
@@ -18,7 +18,7 @@ def params():
         'axes.labelsize': 16, 			#fontsize for x and y labels
         'font.size': 16, 			#fontsize for annotations etc.
         'legend.fontsize': 14, 			#fontsizez for legend text
-        'legend.frameon': False, 		#removes the border around the legend box when set to 'False'
+        'legend.frameon': True, 		#removes the border around the legend box when set to 'False'
         'legend.markerscale': 1.0, 		#the relative size of legend markers vs. original
     
         ## ********************************************************************************
@@ -34,7 +34,7 @@ def params():
         'xtick.minor.top'     : True,   	#draw x axis top minor ticks
         'xtick.minor.bottom' : True ,   	#draw x axis bottom minor ticks
         'xtick.direction': 'in',		#direction x-ticks point
-        'xtick.minor.visible' : True,   	#Quick toggle minor x-ticks on/off
+        'xtick.minor.visible' : False,   	#Quick toggle minor x-ticks on/off
 
         ## ********************************************************************************
         ## * y-axis settings
@@ -49,6 +49,6 @@ def params():
         'ytick.minor.left'     : True,  	#draw y-axis left minor ticks
         'ytick.minor.right' : True ,   		#draw y-axis right minor ticks
         'ytick.direction': 'in',		#direction y-ticks point
-        'ytick.minor.visible' : True,   	#Quick toggle minor y-ticks on/off
+        'ytick.minor.visible' : False,   	#Quick toggle minor y-ticks on/off
         }
     return matplotlib_params
